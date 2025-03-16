@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const taskItem = document.createElement("li");
       taskItem.textContent = taskText;
       
-      // Set priority color
+      
       switch (priority) {
         case "high":
           taskItem.style.color = "red";
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
           break;
       }
 
-      // Add delete button
+      
       const deleteBtn = document.createElement("button");
       deleteBtn.textContent = "X";
       deleteBtn.style.marginLeft = "10px";
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       taskItem.appendChild(deleteBtn);
       taskList.appendChild(taskItem);
 
-      // Clear input
+      
       taskInput.value = "";
     }
   });
